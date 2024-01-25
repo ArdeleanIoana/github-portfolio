@@ -1087,3 +1087,20 @@ a:focus {
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
+
+.carousel-item img{
+  
+  border-radius: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  
+}
+
+.side_home_image{
+  background-color: #3eb4b84b;
+  position:relative;
+  top: -20%;
+  border-radius: 40%;
+}
