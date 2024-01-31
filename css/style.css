@@ -1083,3 +1083,42 @@ a:focus {
   top: -20%;
   border-radius: 40%;
 }
+
+
+div.galleryPreview {
+  margin: 5px;
+  border: 10px solid #ccc;
+  border-radius: 5px;
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+div.galleryPreview:hover {
+  border: 15px solid #777;
+  border-radius: 5px;
+  
+}
+.desc{
+  
+  position:relative;
+  bottom:5%;
+}
+div.galleryPreview img {
+  
+  width: 100%;
+  position:relative;
+  top:10%;
+}
+
+
+.gallery_section2{
+padding-bottom: 20px;
+}
+.galleryImagesSec{
+
+display:flex;
+justify-content: center;
+
+}
