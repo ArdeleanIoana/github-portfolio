@@ -38,15 +38,22 @@ $('#carouselExampleIndicators').on('slid.bs.carousel', function (event) {
 
 
 function filterImages(category) {
-
-
     const images = document.querySelectorAll('.gallery__image');
-
+    const hideNudity = document.getElementById('hideNudity').checked;
     images.forEach((image) => {
-      if (category === 'all' || image.classList.contains(category)) {
-        image.style.display = 'block';
-      } else {
-        image.style.display = 'none';
-      }
-    });
+        const hasCategory = category === 'all' || image.classList.contains(category);
+        const hasNudity = image.classList.contains('nudity');
+        if (hasCategory && (!hasNudity || !hideNudity)) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+          console.log("hiding?");
+        }
+      });
+    }
+
+
+  function toggleNudity() {
+    console.log("hello there");
+    filterImages('all'); // Refresh the gallery when toggling nudity
   }
