@@ -31,6 +31,7 @@
       display: flex;
       margin: auto;
     }
+
     .gallery__column {
       display: flex;
       flex-direction: column;
@@ -43,24 +44,26 @@
       border: solid;
       border-color: rgb(155, 155, 155);
       border-radius: 4px;
-      margin:5px;
+      margin: 5px;
     }
+
     .gallery__column video {
       width: 100%;
       padding: 15px;
       border: solid;
       border-color: rgb(155, 155, 155);
       border-radius: 4px;
-      margin:5px;
+      margin: 5px;
     }
-    .gallery__column img:hover{
-      padding:0px;
+
+    .gallery__column img:hover {
+      padding: 0px;
       transition-duration: 0.5s;
       border-color: white;
     }
 
-    .gallery__column video:hover{
-      padding:0px;
+    .gallery__column video:hover {
+      padding: 0px;
       transition-duration: 0.5s;
       border-color: white;
     }
@@ -107,94 +110,75 @@
     <!-- end header section -->
 
   </div>
-
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('pencil')">Pencil</button>
+    <button onclick="filterImages('painting')">Painting</button>
+    <button onclick="filterImages('blender')">3D</button>
+    <button onclick="filterImages('digital')">Digital</button>
+  </div>
 
   <!-- gallery section -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
 
   <div class="gallery">
     <div class="gallery__column">
-          <img src="images/digital/taylor.jpg" alt="Taylor Momsen Digital Porttrait"
-            class="gallery__image">
-            <img src="images/pencil/4.jpg" alt=""
-            class="gallery__image">
-            <img src="images/3d/0001.png" alt=""
-            class="gallery__image">
-            <img src="images/digital/julesss.jpg" alt=""
-            class="gallery__image">
-            <img src="images/paintings/1.jpg" alt=""
-            class="gallery__image">
-          <img src="images/3d/ballet1.png" alt=""
-            class="gallery__image">
-          <img src="images/pencil/1.jpg" alt=""
-            class="gallery__image">
-            <video class="gallery__image" controls>
-              <source src="images/3d/animationdarkforest10001-0100.mp4" type="video/mp4">
-            </video>
+      <img src="images/digital/taylor.jpg" alt="Taylor Momsen Digital Porttrait" class="gallery__image digital">
+      <img src="images/pencil/4.jpg" alt="" class="gallery__image pencil">
+      <img src="images/3d/0001.png" alt="" class="gallery__image blender">
+      <img src="images/digital/julesss.jpg" alt="" class="gallery__image digital">
+      <img src="images/paintings/1.jpg" alt="" class="gallery__image painting">
+      <img src="images/3d/ballet1.png" alt="" class="gallery__image blender">
+      <video class="gallery__image blender" controls>
+        <source src="images/3d/animationdarkforest10001-0100.mp4" type="video/mp4">
+      </video>
     </div>
 
     <div class="gallery__column">
-      <img src="images/paintings/5.jpg" alt=""
-            class="gallery__image">
-          <video class="gallery__image" controls>
-            <source src="images/3d/animationDark10001-0165.mp4" type="video/mp4">
-          </video>
-          <img src="images/pencil/5.jpg" alt=""
-            class="gallery__image">
-          <img src="images/3d/face1.png" alt="" class="gallery__image">
-          <img src="images/3d/face2.png" alt="" class="gallery__image">
-          <img src="images/3d/face3.png" alt="" class="gallery__image">
-          <img src="images/paintings/3.jpg" alt=""
-            class="gallery__image">
-          <img src="images/digital/flufff.jpg" alt=""
-            class="gallery__image">
-            <img src="images/pencil/8.jpg" alt=""
-            class="gallery__image">
-          <img src="images/digital/julesfin.jpg" alt=""
-            class="gallery__image">
+      <img src="images/paintings/5.jpg" alt="" class="gallery__image painting">
+      <video class="gallery__image blender" controls>
+        <source src="images/3d/animationDark10001-0165.mp4" type="video/mp4">
+      </video>
+      <img src="images/pencil/5.jpg" alt="" class="gallery__image pencil">
+      <img src="images/3d/face1.png" alt="" class="gallery__image blender">
+      <img src="images/3d/face2.png" alt="" class="gallery__image blender">
+      <img src="images/3d/face3.png" alt="" class="gallery__image blender">
+      <img src="images/paintings/3.jpg" alt="" class="gallery__image painting">
+      <img src="images/digital/flufff.jpg" alt="" class="gallery__image digital">
+      <img src="images/pencil/8.jpg" alt="" class="gallery__image pencil">
+      <img src="images/digital/julesfin.jpg" alt="" class="gallery__image digital">
     </div>
 
     <div class="gallery__column">
-      <img src="images/3d/block2.jpg" alt=""
-      class="gallery__image">
-          <img src="images/pencil/2.jpg" alt=""
-            class="gallery__image">
-            <img src="images/digital/dia.jpg" alt=""
-            class="gallery__image">
-            <video class="gallery__image" controls>
-              <source src="images/3d/blockanimation0001-0240.mp4" type="video/mp4">
-            </video>
-            <img src="images/digital/green.jpg" alt=""
-            class="gallery__image">
-          <img src="images/paintings/2.jpg" alt=""
-            class="gallery__image">
-          <img src="images/pencil/3.jpg" alt=""
-            class="gallery__image">
-            <img src="images/paintings/4.jpg" alt=""
-            class="gallery__image">
-            
+      <img src="images/3d/block2.jpg" alt="" class="gallery__image blender">
+      <img src="images/pencil/2.jpg" alt="" class="gallery__image pencil">
+      <img src="images/digital/dia.jpg" alt="" class="gallery__image digital">
+      <video class="gallery__image blender" controls>
+        <source src="images/3d/blockanimation0001-0240.mp4" type="video/mp4">
+      </video>
+      <img src="images/digital/green.jpg" alt="" class="gallery__image digital">
+      <img src="images/paintings/2.jpg" alt="" class="gallery__image painting">
+      <img src="images/pencil/3.jpg" alt="" class="gallery__image pencil">
+      <img src="images/paintings/4.jpg" alt="" class="gallery__image painting">
+
     </div>
 
     <div class="gallery__column">
-      <img src="images/3d/block1.jpg" alt=""
-            class="gallery__image">
+      <img src="images/3d/block1.jpg" alt="" class="gallery__image blender">
       <video class="gallery__image" controls>
         <source src="images/3d/portrait.mp4" type="video/mp4">
       </video>
-          <img src="images/3d/deer.png" alt="" class="gallery__image">
-          <img src="images/digital/rue.jpg" alt=""
-            class="gallery__image">
-            <video class="gallery__image" controls>
-              <source src="images/3d/ballet.mp4" type="video/mp4">
-            </video>
-          
-            <img src="images/pencil/6.jpg" alt=""
-            class="gallery__image">
-            <video class="gallery__image" controls>
-              <source src="images/3d/video0001-0165.mp4" type="video/mp4">
-            </video>
-            <img src="images/pencil/7.jpg" alt=""
-            class="gallery__image">
+      <img src="images/3d/deer.png" alt="" class="gallery__image blender">
+      <img src="images/digital/rue.jpg" alt="" class="gallery__image digital">
+      <video class="gallery__image blender" controls>
+        <source src="images/3d/ballet.mp4" type="video/mp4">
+      </video>
+
+      <img src="images/pencil/6.jpg" alt="" class="gallery__image pencil">
+      <video class="gallery__image blender" controls>
+        <source src="images/3d/video0001-0165.mp4" type="video/mp4">
+      </video>
+      <img src="images/pencil/7.jpg" alt="" class="gallery__image pencil">
     </div>
   </div>
 
@@ -298,6 +282,7 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
-</body>
 
+
+</body>
 </html>
