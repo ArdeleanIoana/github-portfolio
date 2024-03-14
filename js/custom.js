@@ -39,11 +39,9 @@ $('#carouselExampleIndicators').on('slid.bs.carousel', function (event) {
 
 function filterImages(category) {
     const images = document.querySelectorAll('.gallery__image');
-    const hideNudity = document.getElementById('hideNudity').checked;
     images.forEach((image) => {
         const hasCategory = category === 'all' || image.classList.contains(category);
-        const hasNudity = image.classList.contains('nudity');
-        if (hasCategory && (!hasNudity || !hideNudity)) {
+        if (hasCategory) {
           image.style.display = 'block';
         } else {
           image.style.display = 'none';
